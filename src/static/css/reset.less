@@ -1,7 +1,97 @@
-*{
+html {
+    touch-action:none;
+}
+body {
+    overflow: hidden;
+    height: 100%; }
+body,
+div, article, section, header, footer, nav, aside, p,
+h1, h2, h3, h4, h5, h6,
+form, input, button, label,
+a, span, em,
+ul, li, dl, dt, dd,
+table, thead, tbody, tfoot, tr, th, td {
+    font-size: 0.14em;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+input {
+    border: 1px solid #eee;
     padding: 0;
     margin: 0;
+    line-height: 1.5em;
+    height: 1.5em;
+    display: block;
 }
-.bg{
-    background: red;
+//浮动
+.left{
+    float: left;
 }
+.right{
+    float: right;
+}
+//清除浮动
+.clearfix:after { 
+	content:"";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+//1px像素
+.scale-1px {
+    position: relative;
+    border: none;
+    &:after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+    }
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .scale-1px:after {
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .scale-1px:after {
+        -webkit-transform: scaleY(0.33);
+        transform: scaleY(0.33);
+    }
+  }
+.Blocks{
+    display: block;
+}
+.Nones{
+    display: none;
+}
+//   @footNavBg:#FFFFFF;
+//   @font-face {
+//     font-family: yofont;
+//     src: url(//ss.qunarzz.com/yo/font/1.0.3/yofont.woff) format("woff"), url(//ss.qunarzz.com/yo/font/1.0.3/yofont.ttf) format("truetype"); }
+  
+//   .yo-ico {
+//     font-family: yofont !important;
+//     font-style: normal;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     vertical-align: middle; }
+  
