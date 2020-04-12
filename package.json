@@ -1,8 +1,8 @@
 {
-  "name": "reactjanpanproject",
+  "name": "kasei",
   "version": "0.1.0",
   "homepage": ".",
-  "deploy": "aws s3 sync build/ s3://www.kasei.jp",
+
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",
