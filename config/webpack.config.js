@@ -556,6 +556,11 @@ module.exports = function(webpackEnv) {
             : undefined
         )
       ),
+      new webpack.DefinePlugin({
+        "process.env": {
+          NODE_ENV: JSON.stringify("production")
+        }
+      }),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
       // https://github.com/facebook/create-react-app/issues/5358

@@ -12,5 +12,5 @@ module.exports = {
             id: "03",
             imgpic: "123321231"
           }
-    ]
+    ],
 }

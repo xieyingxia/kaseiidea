@@ -2,7 +2,7 @@ html {
     touch-action:none;
 }
 body {
-    overflow: hidden;
+    overflow: auto;
     height: 100%; }
 body,
 div, article, section, header, footer, nav, aside, p,
@@ -82,6 +82,11 @@ input {
 }
 .Nones{
     display: none;
+}
+.showEllipsis{
+    overflow: hidden;;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 //   @footNavBg:#FFFFFF;
 //   @font-face {
